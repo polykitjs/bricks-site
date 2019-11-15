@@ -2,7 +2,7 @@
   import Example from "../../components/Example.svelte";
   import API from "../../components/API.svelte";
   const api = {
-    Modal: {
+    SideNav: {
       slots: {
         default: { description: `The default slot.` },
         backdrop: { description: `Backdrop slot.` },
@@ -89,9 +89,7 @@
 <h4>A window displayed on top of the current page</h4>
 <br />
 
-<!-- <API {api} /> -->
-<br />
-<br />
+<API {api} />
 
 <h5 class="font-semibold">Unstyled</h5>
 <Example group="sidenav" height="300px" files={['Unstyled.svelte']} />

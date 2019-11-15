@@ -55,20 +55,19 @@
   <h3>API</h3>
   <h6>Please review props and slots for all components below.</h6>
 </div>
-<div class="bg-gray-600 px-4 py-3 text-white text-lg">
-  <!-- <span class="text-gray-300 font-bold uppercase text-xs align-top">Component:</span> -->
+<div class="bg-gray-600 px-4 py-3 text-white text-lg relative z-10">
+  <!-- <span class="text-gray-300 font-bold uppercase text-xs align-middle">Component:</span> -->
   <button class="fill-current w-4 align-middle">
     {@html ComponentIcon}
   </button>
   <Menu closeOnClick={true}>
     <span slot="activator" class="border-b-2 pb-1 ">
-
       <span class="align-middle">{activeApiKey}</span>
       <button class="fill-current w-6 align-middle expand-icon">
         {@html AngleDownIcon}
       </button>
     </span>
-    <ul class="bg-white shadow text-gray-900" transition:slide|local>
+    <ul class="relative z-10 bg-white shadow text-gray-900" transition:slide|local>
       {#each Object.keys(api) as componentName}
         <li
           class="cursor-pointer px-3 py-2 hover:bg-gray-100"

@@ -6,12 +6,12 @@
   const config = {};
 </script>
 
-<SideNav class="shadow bg-white" {...config}>
+<SideNav class="shadow bg-white" {...config} widthMobile="100%">
   <aside slot="aside">
     <h3 class="p-3">Sidebar</h3>
     <NavLinks />
   </aside>
   <main class="bg-gray-100 p-8">
-    
+    <Content />
   </main>
 </SideNav>
