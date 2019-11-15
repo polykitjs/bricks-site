@@ -16,9 +16,9 @@
 
 <div>
   <Tabs>
-    <div class="h-10 bg-gray-300">
+    <div class="bg-gray-600 text-white">
       {#each assets as { name }}
-        <TabsLink>{name}</TabsLink>
+        <TabsLink class="my-2 py-1 mx-3 tabslink">{name}</TabsLink>
       {/each}
     </div>
 
@@ -33,3 +33,10 @@
 
   </Tabs>
 </div>
+
+
+<style>
+* :global(.tabslink.selected) {
+  @apply border-b-2 border-white
+}
+</style>
