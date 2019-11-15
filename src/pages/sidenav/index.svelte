@@ -77,8 +77,13 @@
       }
     }
   };
-
 </script>
+
+<style>
+  h5 {
+    @apply pt-16;
+  }
+</style>
 
 <h1 class="font-bold">Sidenav</h1>
 <h4>A window displayed on top of the current page</h4>
@@ -88,10 +93,36 @@
 <br />
 <br />
 
-
 <h5 class="font-semibold">Unstyled</h5>
-<Example group="sidenav" height="400px" files={['Unstyled.svelte']}  />
-
+<Example group="sidenav" height="300px" files={['Unstyled.svelte']} />
 
 <h5 class="font-semibold">Basic</h5>
-<Example group="sidenav"  height="400px" files={['Basic.svelte', '_content.svelte', '_navLinks.svelte']} />
+<Example
+  group="sidenav"
+  height="460px"
+  files={['Basic.svelte', '_content.svelte', '_navLinks.svelte']} />
+
+<h5 class="font-semibold">Mobile fullscreen</h5>
+<Example
+  group="sidenav"
+  height="460px"
+  files={['Fullscreen.svelte', '_content.svelte', '_navLinks.svelte']} />
+
+<h5 class="font-semibold">Blurred</h5>
+<Example
+  group="sidenav"
+  height="460px"
+  files={['Blurred.svelte', '_content.svelte', '_navLinks.svelte']} />
+
+<h5 class="font-semibold">Icons</h5>
+<Example
+  group="sidenav"
+  height="460px"
+  files={['Icons.svelte', '_content.svelte', '_navLinks.svelte']} />
+
+
+<h5 class="font-semibold">Sandbox</h5>
+<Example
+  group="sidenav"
+  height="460px"
+  files={['Sandbox.svelte', '_content.svelte', '_navLinks.svelte']} />

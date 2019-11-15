@@ -43,7 +43,10 @@
     @apply bg-blue-800 px-2 py-2 text-white text-right rounded-t;
   }
   * :global(.example) {
-    @apply text-center py-4;
+    @apply py-4 text-center;
+  }
+  * :global(.example>*) {
+    @apply py-4 text-left;
   }
 </style>
 
@@ -54,11 +57,11 @@
         {`< >`}
       </button>
     </div>
-    <Details bind:show={showCode} hideToggle={true}>
-    <div out:slide|local>
-      <ExampleCode {assets} />
-    </div>
-    </Details>
+    <SmoothBox style="transition: height 0.3s" widthProp="">
+      <Details bind:show={showCode} hideToggle={true}>
+        <ExampleCode {assets} />
+      </Details>
+    </SmoothBox>
     <div class="example relative" style="height: {height}">
       {#if !fullscreen}
         <Component data-tab="component" />

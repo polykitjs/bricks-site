@@ -1,14 +1,14 @@
 <script>
   import { tick } from "svelte";
   export let string, language = "javascript";
-  let source, code;
+  let source, formattedCode;
 
   $: $$props && source && highlightCode();
 
   async function highlightCode() {
     await tick()
     const grammar = Prism.languages[language];
-    code = Prism.highlight(source.textContent, grammar, language);
+    formattedCode = Prism.highlight(source.textContent, grammar, language);
   }
 
   function attachSource(e) {
@@ -20,10 +20,10 @@
   <slot />    
 </code>
 
-<pre>
+<pre class="language-{language}" style="border-radius: 0; margin: 0;">
   <code class="language-{language}">
-    {#if code}
-      {@html code}
+    {#if formattedCode}
+      {@html formattedCode}
     {:else}
       <slot />
     {/if}

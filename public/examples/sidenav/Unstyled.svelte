@@ -3,8 +3,6 @@
 </script>
 
 <SideNav>
-      <aside slot="aside">
-      Sidebar content      
-    </aside>
+  <aside slot="aside">Sidebar content</aside>
   Main content
 </SideNav>

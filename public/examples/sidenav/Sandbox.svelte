@@ -9,7 +9,7 @@
     <h3 class="p-3">Sidebar</h3>
     <NavLinks />
   </aside>
-  <main class="bg-gray-100  p-8">
+  <main class="bg-gray-100 h-full p-8">
     <Content />
   </main>
 </SideNav>

@@ -14,7 +14,7 @@
   ];
 </script>
 
-<div class="pt-4 -mx-3 border-b border-gray-300">
+<div class="pt-4 border-b border-gray-300">
   {#each links as link}
     <a href="#!" class="block hover:bg-gray-100 border-t border-gray-300">
       <span class="p-5 inline-block align-middle" style="width:64px;">
