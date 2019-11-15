@@ -4,6 +4,8 @@
     { path: "/modal", name: "Modal" },
     { path: "/menu", name: "Menu" },
     { path: "/tabs", name: "Tabs" },
+    { path: "/details", name: "Details" },
+    { path: "/smoothbox", name: "SmoothBox" },
     {
       path: "/snackbar",
       name: "Snackbar",

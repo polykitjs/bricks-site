@@ -91,6 +91,8 @@
 
 <API {api} />
 
+<h3 class="-mb-12 pt-16">Examples</h3>
+
 <h5 class="font-semibold">Unstyled</h5>
 <Example group="sidenav" height="300px" files={['Unstyled.svelte']} />
 
