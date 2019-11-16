@@ -46,7 +46,7 @@
     @apply py-4 text-center;
   }
   * :global(.example>*) {
-    @apply py-4 text-left;
+    @apply text-left;
   }
 </style>
 
