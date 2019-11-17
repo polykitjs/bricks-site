@@ -7,33 +7,62 @@
         default: { description: `The default slot.` }
       },
       props: {
-        backdropCSS: [
-          "string",
-          "background-color: #000; opacity: 0.2",
-          "CSS applied to default backdrop."
-        ],
-        show: [
+        active: [
           "boolean",
-          "false",
-          "Show the modal. Bind for programmatic access."
+          "true",
+          "Enable transitions."
         ],
-        onClose: [
-          "false|function",
-          "false",
-          "Function to run instead of closing when clicking the default backdrop."
-        ]
+        widthProp: [
+          "string",
+          "width",
+          "The CSS prop which the width is applied."
+        ],
+        heightProp: [
+          "string",
+          "height",
+          "The CSS prop which the height is applied."
+        ],
+        slotHeight: [
+          "string",
+          "inherited",
+          "The initial height."
+        ],
+        slotWidth: [
+          "string",
+          "inherited",
+          "The initial width."
+        ],
+        startTime: [
+          "integer",
+          "0",
+          "Delay transition activation. Provides a buffer for async calls."
+        ],
+        endTime: [
+          "integer",
+          "0",
+          "Ends transitions after the specified time."
+        ],
+        
       }
     }
   };
 </script>
 
+
+
 <h1 class="font-bold">SmoothBox</h1>
 <h4>Transitions for dynamic content.</h4>
 <br />
 
-<!-- <API {api} />
+<API {api} />
 <br />
-<br /> -->
+<br />
 
 <h5 class="font-semibold">Basic</h5>
 <Example group="smoothbox" files={["Basic.svelte"]} />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
