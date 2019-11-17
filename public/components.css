@@ -1,10 +1,10 @@
 .svelte-w2hcz5 .topright{position:fixed;top:20px;right:40px}.svelte-w2hcz5 .warning{background:red;color:#fff}
-.options-sandbox input[type="text"]{border-bottom-width:1px;border-color:#cbd5e0;border-radius:0;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.25rem;padding-bottom:0.25rem;background-color:transparent}.options-sandbox input[type="text"]:focus,.options-sandbox input[type="text"]:hover{box-shadow:none;background-color:#fff}.options-sandbox > *{margin-top:0.5rem;margin-bottom:0.5rem}.options-sandbox .input *{color:#a0aec0}.options-sandbox .input.dirty.svelte-h56mrq{}.options-sandbox .input.dirty *{color:#1a202c;font-weight:600}
 h5.svelte-1lu7eh9{padding-top:4rem}
-.svelte-ql24bg .example-box{width:100%;background-color:#fff;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);border-radius:0.25rem}.svelte-ql24bg .tabs{background-color:#2c5282;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.5rem;padding-bottom:0.5rem;color:#fff;text-align:right;border-top-left-radius:0.25rem;border-top-right-radius:0.25rem}.svelte-ql24bg .example{padding-top:1rem;padding-bottom:1rem;text-align:center}.svelte-ql24bg .example>*{text-align:left}
+.options-sandbox input[type="text"]{border-bottom-width:1px;border-color:#cbd5e0;border-radius:0;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.25rem;padding-bottom:0.25rem;background-color:transparent}.options-sandbox input[type="text"]:focus,.options-sandbox input[type="text"]:hover{box-shadow:none;background-color:#fff}.options-sandbox > *{margin-top:0.5rem;margin-bottom:0.5rem}.options-sandbox .input *{color:#a0aec0}.options-sandbox .input.dirty.svelte-h56mrq{}.options-sandbox .input.dirty *{color:#1a202c;font-weight:600}
 .api-links.svelte-31lfcn{width:8rem;flex-shrink:0}.svelte-31lfcn .api-links > button{display:block;width:100%;text-align:center;padding-top:0.75rem;padding-bottom:0.75rem;text-transform:uppercase;font-weight:600;color:#718096;border-bottom-width:1px;border-color:#e2e8f0;outline:0}.svelte-31lfcn .api-links > button.selected{background-color:#f7fafc;color:#1a202c}.svelte-31lfcn .pages{transition:height 0.3s;flex:1 1 auto;position:relative;overflow:hidden}.prop.svelte-31lfcn{padding-bottom:0.25rem;padding-left:0.75rem;padding-right:0.75rem;border-bottom-width:1px;border-color:#e2e8f0}.prop.svelte-31lfcn:last-of-type{border-style:none}.prop.svelte-31lfcn>.name.svelte-31lfcn{font-weight:700}.prop.svelte-31lfcn>.svelte-31lfcn{margin-top:0.5rem;margin-bottom:0.5rem}.svelte-31lfcn .expand-icon{transition:transform 0.2s}.svelte-31lfcn .show .expand-icon{transform:rotate(180deg)}
+.svelte-ql24bg .example-box{width:100%;background-color:#fff;box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);border-radius:0.25rem}.svelte-ql24bg .tabs{background-color:#2c5282;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.5rem;padding-bottom:0.5rem;color:#fff;text-align:right;border-top-left-radius:0.25rem;border-top-right-radius:0.25rem}.svelte-ql24bg .example{padding-top:1rem;padding-bottom:1rem;text-align:center}.svelte-ql24bg .example>*{text-align:left}
 .panel.svelte-1w20bp8{top:0;left:0;right:0;bottom:0;overflow:hidden}
-.activator-reference.svelte-o43vtv{position:absolute;top:0;left:0;right:0;bottom:0}.menu.svelte-o43vtv{position:absolute;min-width:100%;z-index:100}.backdrop.svelte-o43vtv{position:fixed;top:0;bottom:0;left:0;right:0}.activator.svelte-o43vtv{cursor:pointer;display:inline-block}
+.activator-reference.svelte-mjcvuk{position:absolute;top:0;left:0;right:0;bottom:0}.menu.svelte-mjcvuk{position:absolute;min-width:100%;z-index:100}.activator.svelte-mjcvuk{cursor:pointer}
 .smoothbox.svelte-18edvq{overflow:hidden
 }
 .inset-0.svelte-1t4fifb{position:absolute;top:0;right:0;bottom:0;left:0}
@@ -14,7 +14,8 @@ th.svelte-1esmxwc{text-align:left;font-weight:bold}td.svelte-1esmxwc:first-child
 .svelte-101lwzf .tabslink.selected{border-bottom-width:2px;border-color:#fff
 }
 li.svelte-khmujg{margin-left:-1rem;margin-right:-1rem;padding-top:0.5rem;padding-bottom:0.5rem;text-align:center}
-li.svelte-phz26k{margin-left:-1rem;margin-right:-1rem;padding-top:0.5rem;padding-bottom:0.5rem;text-align:center}
+li.svelte-ovshn0{padding-top:0.5rem;padding-bottom:0.5rem;text-align:center}
 li.svelte-1gqn7ok{margin-left:-1rem;margin-right:-1rem;padding-top:0.5rem;padding-bottom:0.5rem;text-align:center}
+li.svelte-6u03av{margin-left:-1rem;margin-right:-1rem;padding-top:0.5rem;padding-bottom:0.5rem;text-align:center}
 
 /*# sourceMappingURL=components.css.map */

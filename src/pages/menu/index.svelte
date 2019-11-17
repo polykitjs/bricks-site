@@ -43,3 +43,6 @@
 
 <h5 class="font-semibold">Animated</h5>
 <Example group="menu"  files={['Animated.svelte']} />
+
+<h5 class="font-semibold">Close on click</h5>
+<Example group="menu"  files={['CloseOnClick.svelte']} />
