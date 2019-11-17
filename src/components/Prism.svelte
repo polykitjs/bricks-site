@@ -1,6 +1,6 @@
 <script>
   import { tick } from "svelte";
-  export let string, language = "javascript";
+  export let string = '', language = "javascript";
   let source, formattedCode;
 
   $: $$props && source && highlightCode();

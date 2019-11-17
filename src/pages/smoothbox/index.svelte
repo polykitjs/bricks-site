@@ -2,10 +2,9 @@
   import Example from "../../components/Example.svelte";
   import API from "../../components/API.svelte";
   const api = {
-    Modal: {
+    SmoothBox: {
       slots: {
-        default: { description: `The default slot.` },
-        backdrop: { description: `Backdrop slot.` }
+        default: { description: `The default slot.` }
       },
       props: {
         backdropCSS: [

@@ -6,8 +6,8 @@
   import { slide } from "svelte/transition";
 
   export let group,
-    fullscreen,
-    show,
+    fullscreen = false,
+    show = false,
     height = "auto",
     files = [];
 
@@ -57,7 +57,7 @@
         {`< >`}
       </button>
     </div>
-    <SmoothBox style="transition: height 0.3s" widthProp="">
+    <SmoothBox style="transition: height 0.3s; background: #222" widthProp="">
       <Details bind:show={showCode} hideToggle={true}>
         <ExampleCode {assets} />
       </Details>
