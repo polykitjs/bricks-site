@@ -1,24 +1,71 @@
 <script>
+  export let route;
+
+  import TextIcon from "@iconscout/unicons/svg/book-open.svg";
+  import RulerIcon from "@iconscout/unicons/svg/ruler-combined.svg";
+  import LayerIcon from "@iconscout/unicons/svg/layer-group.svg";
+  import SuitcaseIcon from "@iconscout/unicons/svg/suitcase-alt.svg";
+  import FolderIcon from "@iconscout/unicons/svg/folder.svg";
+
   const links = [
-    { path: "/api/sidenav", name: "Sidenav" },
-    { path: "/api/modal", name: "Modal" },
-    { path: "/api/menu", name: "Menu" },
-    { path: "/api/tabs", name: "Tabs" },
-    { path: "/api/details", name: "Details" },
-    { path: "/api/smoothbox", name: "SmoothBox" },
-    { path: "/api/snackbar", name: "Snackbar" }
+    { path: "/introduction", name: "Introduction", icon: TextIcon },
+    { path: "/guide", name: "Guide", icon: RulerIcon },
+    {
+      name: "API",
+      icon: LayerIcon,
+      children: [
+        { path: "/api/sidenav", name: "Sidenav" },
+        { path: "/api/modal", name: "Modal" },
+        { path: "/api/menu", name: "Menu" },
+        { path: "/api/tabs", name: "Tabs" },
+        { path: "/api/details", name: "Details" },
+        { path: "/api/smoothbox", name: "SmoothBox" },
+        { path: "/api/snackbar", name: "Snackbar" }
+      ]
+    }
   ];
+
+  function selected(link, route) {
+    return (route && route.path.includes(link.path) && 'selected') || '';
+  }
 </script>
 
-<div class="pt-4 -mx-3 border-b border-gray-300">
+<style>
+  a.selected {
+    @apply bg-gray-600;
+  }
+  a.link {
+    @apply block fill-current;
+  }
+  a.link:hover {
+    @apply bg-gray-600;
+  }
+</style>
+
+<div class="mt-4 border-t border-gray-600 ">
   {#each links as link}
-    <a href="#!" class="block hover:bg-gray-300 border-t border-gray-300">
-      <span class="p-5 inline-block align-middle" style="width:64px;">
-        {#if link.icon}
+    <a
+      href={link.path}
+      class="link border-b border-gray-600 {selected(link, route)}">
+      <div class="h-16 inline-block align-middle" />
+      {#if link.icon}
+        <span class="p-5 inline-block align-middle " style="width:64px;">
           {@html link.icon}
-        {/if}
+        </span>
+      {/if}
+      <span class="align-middle inline-block {link.icon ? '' : 'pl-5'}">
+        {link.name}
       </span>
-      <span class="align-middle">{link.name}</span>
     </a>
+    {#if link.children}
+      <div class="subnav">
+        {#each link.children as link}
+          <a href={link.path} style="padding-left:64px" class="link {selected(link, route)}">
+            <div class="h-16 inline-block align-middle" />
+            {link.name}
+          </a>
+        {/each}
+      </div>
+    {/if}
   {/each}
 </div>
