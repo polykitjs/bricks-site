@@ -7,6 +7,7 @@
   export let api;
   let activeApiKey = Object.keys(api)[0];
   $: activeApi = api[activeApiKey];
+  $: multipleApis = Object.keys(api).length > 1;
 
   let tabWindowHeight;
   let readyForTransition = false;
@@ -59,25 +60,30 @@
   <button class="fill-current w-4 align-middle">
     {@html ComponentIcon}
   </button>
-  <Menu closeOnClick={true}>
-    <span slot="activator" class="border-b-2 pb-1 ">
-      <span class="align-middle">{activeApiKey}</span>
-      <button class="fill-current w-6 align-middle expand-icon">
-        {@html AngleDownIcon}
-      </button>
-    </span>
-    <ul
-      class="relative z-10 bg-white shadow text-gray-900"
-      transition:slide|local>
-      {#each Object.keys(api) as componentName}
-        <li
-          class="cursor-pointer px-3 py-2 hover:bg-gray-100"
-          on:click={() => (activeApiKey = componentName)}>
-          {componentName}
-        </li>
-      {/each}
-    </ul>
-  </Menu>
+  {#if multipleApis}
+    <!-- content here -->
+    <Menu closeOnClick={true}>
+      <span slot="activator" class="border-b-2 pb-1 ">
+        <span class="align-middle">{activeApiKey}</span>
+        <button class="fill-current w-6 align-middle expand-icon">
+          {@html AngleDownIcon}
+        </button>
+      </span>
+      <ul
+        class="relative z-10 bg-white shadow text-gray-900"
+        transition:slide|local>
+        {#each Object.keys(api) as componentName}
+          <li
+            class="cursor-pointer px-3 py-2 hover:bg-gray-100"
+            on:click={() => (activeApiKey = componentName)}>
+            {componentName}
+          </li>
+        {/each}
+      </ul>
+    </Menu>
+    {:else}
+    <span class="align-middle">{activeApiKey}</span>
+  {/if}
 
 </div>
 <div class="bg-white">
