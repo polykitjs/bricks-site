@@ -1,70 +1,48 @@
 <script>
-  import Example from "../../components/Example.svelte";
+  import { Menu } from "svelteBricks";
   import API from "../../components/API.svelte";
+  import Example from "../../components/Example.svelte";
   const api = {
-    Details: {
+    Menu: {
       slots: {
-        default: { description: `The default slot.` },
-        show: { description: `The activator slot to show the Details.` },
-        hide: { description: `The activator slot to hide the details.` }
+        default: { description: "The default slot." },
+        activator: { description: "Activator to toggle menu." }
       },
       props: {
-        active: [
-          "boolean",
-          "true",
-          "Enable transitions."
-        ],
-        widthProp: [
+        closeOnClick: ["boolean", "false", "Close the menu if clicked."],
+        xOffset: [
           "string",
-          "width",
-          "The CSS prop which the width is applied."
-        ],
-        heightProp: [
-          "string",
-          "height",
-          "The CSS prop which the height is applied."
-        ],
-        slotHeight: [
-          "string",
-          "inherited",
-          "The initial height."
-        ],
-        slotWidth: [
-          "string",
-          "inherited",
-          "The initial width."
-        ],
-        startTime: [
-          "integer",
           "0",
-          "Delay transition activation. Provides a buffer for async calls."
+          "Offset menu on the x axis. Activator equals 100%."
         ],
-        endTime: [
-          "integer",
-          "0",
-          "Ends transitions after the specified time."
+        yOffset: [
+          "string",
+          "100%",
+          "Offset menu on the y axis. Activator equals 100%."
         ],
-        
+        xAlign: ["left|right", "left", "Align menu to Activator on x axis."],
+        yAlign: ["bottom|top", "top", "Align menu to Activator on y axis."]
       }
     }
   };
 </script>
 
-
-
-<h1 class="font-bold">SmoothBox</h1>
-<h4>Transitions for dynamic content.</h4>
-<br />
+<h3>Menu</h3>
 
 <API {api} />
-<br />
-<br />
+
+
+<h5 class="font-semibold">Unstyled</h5>
+<Example group="menu"  files={['Unstyled.svelte']} />
 
 <h5 class="font-semibold">Basic</h5>
-<Example group="smoothbox" files={["Basic.svelte"]} />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<Example group="menu"  files={['Basic.svelte']} />
+
+<h5 class="font-semibold">Nested</h5>
+<Example group="menu"  files={['Nested.svelte']} />
+
+<h5 class="font-semibold">Animated</h5>
+<Example group="menu"  files={['Animated.svelte']} />
+
+<h5 class="font-semibold">Close on click</h5>
+<Example group="menu"  files={['CloseOnClick.svelte']} />
