@@ -58,7 +58,7 @@
       </button>
     </div>
     <SmoothBox style="transition: height 0.3s; background: #222" widthProp="">
-      <Details bind:show={showCode} hideToggle={true}>
+      <Details bind:show={showCode}>
         <ExampleCode {assets} />
       </Details>
     </SmoothBox>
