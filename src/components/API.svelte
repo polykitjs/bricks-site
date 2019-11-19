@@ -27,7 +27,6 @@
     transition: height 0.3s;
     @apply flex-auto relative overflow-hidden;
   }
-  
 
   .prop {
     @apply pb-1 px-3 border-b border-gray-300;
@@ -67,7 +66,9 @@
         {@html AngleDownIcon}
       </button>
     </span>
-    <ul class="relative z-10 bg-white shadow text-gray-900" transition:slide|local>
+    <ul
+      class="relative z-10 bg-white shadow text-gray-900"
+      transition:slide|local>
       {#each Object.keys(api) as componentName}
         <li
           class="cursor-pointer px-3 py-2 hover:bg-gray-100"
@@ -83,7 +84,9 @@
   <Tabs class="flex shadow">
     <aside class="api-links">
       <TabsLink>Props</TabsLink>
-      <TabsLink>Slots</TabsLink>
+      {#if activeApi.slots}
+        <TabsLink>Slots</TabsLink>
+      {/if}
     </aside>
     <SmoothBox class="pages" widthProp={false} startTime={200}>
 

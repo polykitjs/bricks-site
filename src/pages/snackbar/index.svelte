@@ -47,6 +47,16 @@
         ],
         
       }
+    },
+    'console.info': {
+      props: {
+        snack: ['string', '', 'snack message'],
+        time: ['integer', '', 'Timeout for snack. Leave empty to use default timeout. Set to 0 to disable timeout'],
+        template: ['string|component', '', 'Template for snackbar. Leave empty to use default template'],
+        fn: ['function', '', 'If specified, clicking the snackbar will call the function and close the snackbar.'],
+        filter: ['function', 'msg => msg.snack', 'If function returns true, snackbar will be used for the message.'],
+        '[custom]':  ['any', '', 'Custom props can be accessed in custom templates']
+      }
     }
   };
 </script>
