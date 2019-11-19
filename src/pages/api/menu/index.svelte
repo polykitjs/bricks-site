@@ -1,7 +1,7 @@
 <script>
   import { Menu } from "svelteBricks";
-  import API from "../../components/API.svelte";
-  import Example from "../../components/Example.svelte";
+  import API from "../../../components/API.svelte";
+  import Example from "../../../components/Example.svelte";
   const api = {
     Menu: {
       slots: {

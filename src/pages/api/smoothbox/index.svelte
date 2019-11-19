@@ -1,6 +1,6 @@
 <script>
-  import Example from "../../components/Example.svelte";
-  import API from "../../components/API.svelte";
+  import Example from "../../../components/Example.svelte";
+  import API from "../../../components/API.svelte";
   const api = {
     SmoothBox: {
       slots: {

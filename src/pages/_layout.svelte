@@ -4,7 +4,7 @@
 </script>
 
 <SideNav widthCollapsed="64px" class="shadow bg-gray-700 text-white" >
-  <aside slot="aside" class=" py-8">
+  <aside slot="aside" class="">
     <a href="/">
       <h3>Bricks examples</h3>
     </a>
