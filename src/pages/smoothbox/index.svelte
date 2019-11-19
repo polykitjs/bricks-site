@@ -40,7 +40,7 @@
         endTime: [
           "integer",
           "0",
-          "Ends transitions after the specified time."
+          "Disable transitions after the specified time."
         ],
         
       }

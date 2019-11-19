@@ -57,8 +57,9 @@
   </div>
 
   <Advanced />
-
-  <Snackbar />
-  <Snackbar {...customSnackbar} />
+  <div>
+    <Snackbar />
+    <Snackbar {...customSnackbar} />
+  </div>
 
 </div>
