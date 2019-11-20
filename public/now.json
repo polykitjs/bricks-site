@@ -1,0 +1,7 @@
+{
+    "name": "bricks",
+    "routes": [{
+        "src": "/[^\\.]+",
+        "dest": "/index.html"
+    }]
+}
