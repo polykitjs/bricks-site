@@ -4,6 +4,7 @@
   import Prism from "./Prism.svelte";
   import { Tabs, TabsLink, TabsPage, Details, SmoothBox } from "svelteBricks";
   import { slide } from "svelte/transition";
+  import ArrowIcon from "@iconscout/unicons/svg/arrow.svg";
 
   export let group,
     fullscreen = false,
@@ -52,9 +53,10 @@
 
 <div>
   <div class="example-box">
-    <div class="text-right bg-gray-200 px-3 py-1">
-      <button on:click={toggleCode} class="font-bold text-gray-600">
-        {`< >`}
+    <div class="text-right bg-gray-200 px-3">
+      <div class="inline-block h-8 align-middle"></div>
+      <button on:click={toggleCode} class="focus:outline-none h-5 w-5 align-middle bg-white rounded-full ">
+        {@html ArrowIcon}
       </button>
     </div>
     <SmoothBox style="transition: height 0.3s; background: #222" widthProp="">
