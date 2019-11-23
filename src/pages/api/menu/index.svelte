@@ -27,22 +27,25 @@
   };
 </script>
 
-<h3>Menu</h3>
+<div class="api">
 
-<API {api} />
+  <h3>Menu</h3>
 
+  <API {api} />
 
-<h5 class="font-semibold">Unstyled</h5>
-<Example group="menu"  files={['Unstyled.svelte']} />
+  <h5 class="font-semibold">Unstyled</h5>
+  <Example group="menu" files={['Unstyled.svelte']} />
 
-<h5 class="font-semibold">Basic</h5>
-<Example group="menu"  files={['Basic.svelte']} />
+  <h5 class="font-semibold">Basic</h5>
+  <Example group="menu" files={['Basic.svelte']} />
 
-<h5 class="font-semibold">Nested</h5>
-<Example group="menu"  files={['Nested.svelte']} />
+  <h5 class="font-semibold">Nested</h5>
+  <Example group="menu" files={['Nested.svelte']} />
 
-<h5 class="font-semibold">Animated</h5>
-<Example group="menu"  files={['Animated.svelte']} />
+  <h5 class="font-semibold">Animated</h5>
+  <Example group="menu" files={['Animated.svelte']} />
 
-<h5 class="font-semibold">Close on click</h5>
-<Example group="menu"  files={['CloseOnClick.svelte']} />
+  <h5 class="font-semibold">Close on click</h5>
+  <Example group="menu" files={['CloseOnClick.svelte']} />
+
+</div>

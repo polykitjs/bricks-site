@@ -23,6 +23,7 @@
     "svelte-filerouter": "^1.3.0",
     "svelte-preprocess": "^3.1.2",
     "svelte-preprocess-markdown": "^2.4.1",
+    "svelte-prism": "^1.0.0",
     "tailwindcss": "^1.1.2"
   },
   "dependencies": {

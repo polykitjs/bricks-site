@@ -1,6 +1,6 @@
 <script>
   import { Tabs, TabsLink, TabsPage, SmoothBox } from "svelteBricks";
-  import Prism from "./Prism.svelte";
+  import Prism from "svelte-prism";
   export let assets;
 
   const cache = {};
@@ -27,6 +27,7 @@
         <TabsPage>
           <div use:hydrate data-path={path} />
           <Prism data-tab="code" language="html">{cache[path]}</Prism>
+          <!-- <Prism data-tab="code" language="html" source="{cache[path]}"></Prism> -->
         </TabsPage>
       {/each}
     </div>
