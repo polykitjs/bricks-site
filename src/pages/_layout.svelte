@@ -4,7 +4,7 @@
   import NavLinks from "./_navLinks.svelte";
 </script>
 
-<SideNav  widthCollapsed="64px" class="shadow bg-gray-700 text-white" >
+<SideNav  class="shadow bg-gray-700 text-white overflow-y-auto overflow-x-hidden" >
   <aside slot="aside" class="">
     <a href="/">
       <h3>Bricks examples</h3>
