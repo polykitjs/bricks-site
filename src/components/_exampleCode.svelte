@@ -26,7 +26,7 @@
       {#each assets as { path }}
         <TabsPage>
           <div use:hydrate data-path={path} />
-          <Prism data-tab="code" language="html">{cache[path]}</Prism>
+          <Prism data-tab="code" language="svelte">{cache[path]}</Prism>
           <!-- <Prism data-tab="code" language="html" source="{cache[path]}"></Prism> -->
         </TabsPage>
       {/each}
