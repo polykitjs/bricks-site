@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
-    "@iconscout/unicons": "^1.0.1",
+    "@iconscout/unicons": "git+https://github.com/jakobrosenberg/unicons.git",
     "autoprefixer": "^9.6.1",
     "json-stringify-extended": "^2.0.0",
     "npm-run-all": "^4.1.5",
@@ -20,19 +20,21 @@
     "rollup-plugin-terser": "^4.0.4",
     "stringify-object": "^3.3.0",
     "svelte": "^3.0.0",
-    "svelte-filerouter": "^1.3.0",
     "svelte-preprocess": "^3.1.2",
     "svelte-preprocess-markdown": "^2.4.1",
     "svelte-prism": "^1.0.4",
     "tailwindcss": "^1.1.2"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4"
+    "sirv-cli": "^0.4.4",
+    "svelte-filerouter": "^1.4.3"
   },
   "scripts": {
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
+    "dev-routify": "run-p start:routify start:dev autobuild",
+    "start:routify": "routify explain",
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
     "buildnow": "npm run build && cd public && now"

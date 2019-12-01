@@ -19,7 +19,7 @@ export default {
         sourcemap: true,
         format: 'iife',
         name: 'app',
-        file: 'public/bundle.js'
+        file: 'public/build/bundle.js'
     },
     plugins: [
         svg(),
@@ -29,7 +29,10 @@ export default {
                 { find: '@', replacement: path.resolve(__dirname + '/src') }
             ]
         }),
-        fileRouter({}),
+        // fileRouter({
+        //     unknownPropWarnings: false
+        //     // outputFile: './temp/routes.js'
+        // }),
         svelte({
             extensions: ['.svelte', '.md'],
             preprocess:[
@@ -41,11 +44,11 @@ export default {
             // enable run-time checks when not in production
             dev: !production,
             css: css => {
-                css.write('public/components.css');
+                css.write('public/build/components.css');
             }
         }),
         postcss({
-            extract: 'public/utils.css'
+            extract: 'public/build/utils.css'
         }),
 
         // If you have external dependencies installed from
