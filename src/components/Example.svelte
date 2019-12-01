@@ -3,7 +3,7 @@
   import ExampleCode from "./_exampleCode.svelte";
   import { Tabs, TabsLink, TabsPage, Details, SmoothBox } from "svelteBricks";
   import { slide } from "svelte/transition";
-  import ArrowIcon from "@iconscout/unicons/svg/arrow.svg";
+  import ArrowIcon from "@iconscout/unicons/svg/line/arrow.svg";
 
   export let group,
     fullscreen = false,

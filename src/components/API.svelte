@@ -2,8 +2,8 @@
   import { tick } from "svelte";
   import { Tabs, TabsLink, TabsPage, Menu, SmoothBox } from "svelteBricks";
   import { slide, fly } from "svelte/transition";
-  import AngleDownIcon from "@iconscout/unicons/svg/angle-down.svg";
-  import ComponentIcon from "@iconscout/unicons/svg/layer-group.svg";
+  import AngleDownIcon from "@iconscout/unicons/svg/line/angle-down.svg";
+  import ComponentIcon from "@iconscout/unicons/svg/line/layer-group.svg";
   export let api;
   let activeApiKey = Object.keys(api)[0];
   $: activeApi = api[activeApiKey];

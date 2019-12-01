@@ -1,9 +1,9 @@
 <script>
-  import CommentIcon from "@iconscout/unicons/svg/comment-alt.svg";
-  import MessageIcon from "@iconscout/unicons/svg/envelope-alt.svg";
-  import ClockIcon from "@iconscout/unicons/svg/clock.svg";
-  import SuitcaseIcon from "@iconscout/unicons/svg/suitcase-alt.svg";
-  import FolderIcon from "@iconscout/unicons/svg/folder.svg";
+  import CommentIcon from "@iconscout/unicons/svg/line/comment-alt.svg";
+  import MessageIcon from "@iconscout/unicons/svg/line/envelope-alt.svg";
+  import ClockIcon from "@iconscout/unicons/svg/line/clock.svg";
+  import SuitcaseIcon from "@iconscout/unicons/svg/line/suitcase-alt.svg";
+  import FolderIcon from "@iconscout/unicons/svg/line/folder.svg";
 
   const links = [
     { name: "Feed", icon: CommentIcon },

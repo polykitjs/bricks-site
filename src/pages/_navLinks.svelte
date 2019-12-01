@@ -2,11 +2,11 @@
   import { Details } from "svelteBricks";
   export let route;
 
-  import TextIcon from "@iconscout/unicons/svg/book-open.svg";
-  import RulerIcon from "@iconscout/unicons/svg/ruler-combined.svg";
-  import LayerIcon from "@iconscout/unicons/svg/layer-group.svg";
-  import SuitcaseIcon from "@iconscout/unicons/svg/suitcase-alt.svg";
-  import FolderIcon from "@iconscout/unicons/svg/folder.svg";
+  import TextIcon from "@iconscout/unicons/svg/line/book-open.svg";
+  import RulerIcon from "@iconscout/unicons/svg/line/ruler-combined.svg";
+  import LayerIcon from "@iconscout/unicons/svg/line/layer-group.svg";
+  import SuitcaseIcon from "@iconscout/unicons/svg/line/suitcase-alt.svg";
+  import FolderIcon from "@iconscout/unicons/svg/line/folder.svg";
 
   const links = [
     { path: "/introduction", name: "Introduction", icon: TextIcon },
