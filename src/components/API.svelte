@@ -1,6 +1,6 @@
 <script>
   import { tick } from "svelte";
-  import { Tabs, TabsLink, TabsPage, Menu, SmoothBox } from "svelteBricks";
+  import { Tabs, TabsLink, TabsPage, Menu, SmoothBox } from "@sveltech/bricks";
   import { slide, fly } from "svelte/transition";
   import AngleDownIcon from "@iconscout/unicons/svg/line/angle-down.svg";
   import ComponentIcon from "@iconscout/unicons/svg/line/layer-group.svg";

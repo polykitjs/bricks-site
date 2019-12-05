@@ -1,6 +1,9 @@
 <script>
   import Example from "../../../components/Example.svelte";
   import API from "../../../components/API.svelte";
+
+  export let scoped
+
   const api = {
     Modal: {
       slots: {
@@ -26,6 +29,8 @@
       }
     }
   };
+
+  console.log('scoped', scoped)
 </script>
 
 <h1 class="font-bold">Modal</h1>

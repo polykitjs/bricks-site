@@ -1,5 +1,5 @@
 <script>
-  import { Tabs, TabsLink, TabsPage, SmoothBox } from "svelteBricks";
+  import { Tabs, TabsLink, TabsPage, SmoothBox } from "@sveltech/bricks";
   import Prism from "svelte-prism";
   export let assets;
 

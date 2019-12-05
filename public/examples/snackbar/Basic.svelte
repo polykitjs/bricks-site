@@ -1,5 +1,5 @@
 <script>
-  import { Snackbar } from "svelteBricks";
+  import { Snackbar } from "@sveltech/bricks";
   function popASnack(){
     console.info({snack: 'Hello'})
   }

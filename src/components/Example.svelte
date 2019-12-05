@@ -1,7 +1,7 @@
 <script>
   import * as components from "../../public/examples";
   import ExampleCode from "./_exampleCode.svelte";
-  import { Tabs, TabsLink, TabsPage, Details, SmoothBox } from "svelteBricks";
+  import { Tabs, TabsLink, TabsPage, Details, SmoothBox } from "@sveltech/bricks";
   import { slide } from "svelte/transition";
   import ArrowIcon from "@iconscout/unicons/svg/line/arrow.svg";
 

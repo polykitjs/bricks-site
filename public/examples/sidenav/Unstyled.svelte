@@ -1,5 +1,5 @@
 <script>
-  import { SideNav } from "svelteBricks";
+  import { SideNav } from "@sveltech/bricks";
 </script>
 
 <SideNav>

@@ -1,5 +1,5 @@
 <script>
-    import {Details} from 'svelteBricks'
+    import {Details} from '@sveltech/bricks'
 </script>
 
 <Details>

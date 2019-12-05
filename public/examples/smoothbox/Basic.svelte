@@ -1,5 +1,5 @@
 <script>
-  import { SmoothBox } from "svelteBricks";
+  import { SmoothBox } from "@sveltech/bricks";
   import { text } from "./_content.js";
   let usePre = false;
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import { Modal } from "svelteBricks";
+  import { Modal } from "@sveltech/bricks";
 </script>
 
 

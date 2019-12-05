@@ -1,5 +1,5 @@
 <script>
-  import { SideNav } from "svelteBricks";
+  import { SideNav } from "@sveltech/bricks";
   import Content from "./_content.svelte";
   import NavLinks from "./_navLinks.svelte";
 

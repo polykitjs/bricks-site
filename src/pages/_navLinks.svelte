@@ -1,12 +1,15 @@
 <script>
-  import { Details } from "svelteBricks";
-  export let route;
+  import { Details } from "@sveltech/bricks";
+  import {route, url} from 'svelte-filerouter'
+  import {getContext} from 'svelte'
+  
 
   import TextIcon from "@iconscout/unicons/svg/line/book-open.svg";
   import RulerIcon from "@iconscout/unicons/svg/line/ruler-combined.svg";
   import LayerIcon from "@iconscout/unicons/svg/line/layer-group.svg";
   import SuitcaseIcon from "@iconscout/unicons/svg/line/suitcase-alt.svg";
   import FolderIcon from "@iconscout/unicons/svg/line/folder.svg";
+
 
   const links = [
     { path: "/introduction", name: "Introduction", icon: TextIcon },
@@ -15,7 +18,7 @@
       name: "API",
       icon: LayerIcon,
       children: [
-        { path: "/api/sidenav", name: "Sidenav" },
+        { path: url("../api/sidenav"), name: "Sidenav" },
         { path: "/api/modal", name: "Modal" },
         { path: "/api/menu", name: "Menu" },
         { path: "/api/tabs", name: "Tabs" },
@@ -26,8 +29,8 @@
     }
   ];
 
-  function selected(link, route) {
-    return (route && route.path.includes(link.path) && "selected") || "";
+  function selected(link, $route) {
+    return ($route && $route.path.includes(link.path) && "selected") || "";
   }
 </script>
 
@@ -49,7 +52,7 @@
 
       on:click={()=>{link.hideChildren = !link.hideChildren}}
       href={link.path}
-      class="link border-b border-gray-600 {selected(link, route)}">
+      class="link border-b border-gray-600 {selected(link, $route)}">
       <div class="h-16 inline-block align-middle" />
       {#if link.icon}
         <span class="px-5 inline-block align-middle " style="width:64px;">
@@ -68,7 +71,7 @@
             <a
               href={link.path}
               style="padding-left:64px"
-              class="link {selected(link, route)}">
+              class="link {selected(link, $route)}">
               <div class="h-16 inline-block align-middle" />
               {link.name}
             </a>

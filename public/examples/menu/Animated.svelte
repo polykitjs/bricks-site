@@ -1,5 +1,5 @@
 <script>
-  import { Menu } from "svelteBricks";
+  import { Menu } from "@sveltech/bricks";
   import {slide} from 'svelte/transition'
 </script>
 

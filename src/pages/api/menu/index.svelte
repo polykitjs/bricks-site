@@ -1,5 +1,5 @@
 <script>
-  import { Menu } from "svelteBricks";
+  import { Menu } from "@sveltech/bricks";
   import API from "../../../components/API.svelte";
   import Example from "../../../components/Example.svelte";
   const api = {

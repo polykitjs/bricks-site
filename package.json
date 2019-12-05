@@ -26,6 +26,7 @@
     "tailwindcss": "^1.1.2"
   },
   "dependencies": {
+    "@sveltech/bricks": "^1.0.0",
     "sirv-cli": "^0.4.4",
     "svelte-filerouter": "^1.4.3"
   },
@@ -34,7 +35,7 @@
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "dev-routify": "run-p start:routify start:dev autobuild",
-    "start:routify": "routify explain",
+    "start:routify": "routify",
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
     "buildnow": "npm run build && cd public && now"

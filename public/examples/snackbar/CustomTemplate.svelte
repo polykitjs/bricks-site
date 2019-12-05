@@ -1,5 +1,5 @@
 <script>
-  import { Snackbar } from "svelteBricks";
+  import { Snackbar } from "@sveltech/bricks";
   import MyTemplate from "./_myTemplate.svelte";
   function popASnack() {
     const message = {};
