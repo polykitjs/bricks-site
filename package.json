@@ -38,6 +38,6 @@
     "start:routify": "routify",
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
-    "buildnow": "npm run build && cd public && now"
+    "buildnow": "npm run build && cd public && now --prod"
   }
 }
