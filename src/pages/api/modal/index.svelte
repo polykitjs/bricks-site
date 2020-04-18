@@ -30,7 +30,6 @@
     }
   };
 
-  console.log('scoped', scoped)
 </script>
 
 <h1 class="font-bold">Modal</h1>
