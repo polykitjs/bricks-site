@@ -5,7 +5,7 @@
 <h1>Guide</h1>
 
 <h3>Install</h3>
-<Prism language="html" source="npm i svelte-bricks" />
+<Prism language="html" source="npm i @sveltech/bricks" />
 
 <h3>Usage</h3>
 <p>See the different components</p>
