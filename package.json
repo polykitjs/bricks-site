@@ -19,7 +19,7 @@
     "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-terser": "^4.0.4",
     "stringify-object": "^3.3.0",
-    "svelte": "^3.0.0",
+    "svelte": "^3.49.0",
     "svelte-preprocess": "^3.1.2",
     "svelte-preprocess-markdown": "^2.4.1",
     "svelte-prism": "^1.0.4",
